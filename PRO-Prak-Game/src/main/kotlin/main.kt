@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
 //    println(tim.weapon.name)
 //    println(tim.weapon.damageInflicted)
-
+3
    tim.weapon = nichirinblade
 
 //    println(tim.weapon.name)
@@ -60,14 +60,50 @@ fun main(args: Array<String>) {
 
     val level1 = readLine()?.toInt()
     if(level1 == 1){
-        println("Level 1: ")
+        println("Level 1: Training")
         println()
-
+        println("Je wilt de demons verslaan maar daarvoor moet je natuurlijk eerst voor trainen, je word niet zomaar sterk. Je hebt steroide pillen nodig om te beginnen ze zijn ergens in de kamer, zoek het.")
+        println()
+        println("1. Boekenkast")
+        println("2. Kledingkast")
+        println("3. Koelkast")
+        println("4. Bureaulade")
 
     }
     else {
         println("Verkeerde invoer, begin opnieuw.")
    }
+
+    val doorgaan = readLine()?.toInt()
+    if(doorgaan == 1){
+        println("Er is niks in de boekenkast, begin opnieuw.")
+        println()
+    }
+    if(doorgaan == 2){
+        println("Er is niks in de kledingkast, begin opnieuw")
+        println()
+    }
+    if(doorgaan == 3){
+        println("Goedzo, neem ze in door op 1 te klikken")
+        println()
+    }
+    if(doorgaan == 4){
+        println("Er is niks in de kledingkast, begin opnieuw")
+        println()
+    }
+    val pillen = readLine()?.toInt()
+    if(pillen == 1){
+        println("Nadat je je steroide pillen ingenomen hebt ga je naar de mountains om te trainen, 1 jaar lang ga je trainen in de mountains met de zwaard die je gekregen hebt van je vader voordat die dood ging aan een ziekte...")
+        println()
+        println("Typ 1 om 1 jaar vooruit te gaan")
+    }
+    val timeskip = readLine()?.toInt()
+    if(timeskip == 1){
+        println("Na 1 jaar ben je eindelijk sterk genoeg en ben je officieel een Demon Slayer.")
+        println()
+    }
+
+
 
 
 
