@@ -1,41 +1,12 @@
 import kotlin.time.measureTimedValue
 
 fun main(args: Array<String>) {
-    val tim = Player("Tim", 4, 1, 0)
 
-    val nichirinblade = Weapon("Nichirin Blade",15)
+//    val healthPotion = Loot("Health Potion", LootType.POTION, 7.50)
+//    tim.inventory.add(healthPotion)
 
-//    println(tim.weapon.name)
-//    println(tim.weapon.damageInflicted)
-3
-   tim.weapon = nichirinblade
-
-//    println(tim.weapon.name)
-//    println(tim.weapon.damageInflicted)
-
-//    val lowerdemon = Enemy("Lowerdemon", 2, 1 )
-
-//    val claws = Weapon("Claws",18)
-
-//    lowerdemon.weapon = claws
-
-//    lowerdemon.show()
-//    println(lowerdemon)
-
-
-//    println(tim.weapon.name)
-
-//    tim.show()
-
-    val healthPotion = Loot("Health Potion", LootType.POTION, 7.50)
-    tim.inventory.add(healthPotion)
-//    tim.showInventory()
-
-    val toxicPotion = Loot("Toxic Potion", LootType.POTION, 7.50)
-    tim.inventory.add(toxicPotion)
-//    tim.showInventory()
-
-   // println(tim)
+//    val toxicPotion = Loot("Toxic Potion", LootType.POTION, 7.50)
+//    tim.inventory.add(toxicPotion)
 
     println("Welkom bij onze Demon Slayer game!")
     println("Typ 1 om te beginnen...")
@@ -84,7 +55,7 @@ fun main(args: Array<String>) {
         println()
     }
     if(doorgaan == 3){
-        println("Goedzo, neem ze in door op 1 te klikken")
+        println("Goedzo, neem ze in door op 5 te klikken")
         println()
     }
     if(doorgaan == 4){
@@ -92,7 +63,7 @@ fun main(args: Array<String>) {
         println()
     }
     val pillen = readLine()?.toInt()
-    if(pillen == 1){
+    if(pillen == 5){
         println("Nadat je je steroide pillen ingenomen hebt ga je naar de mountains om te trainen, 1 jaar lang ga je trainen in de mountains met de zwaard die je gekregen hebt van je vader voordat die dood ging aan een ziekte...")
         println()
         println("Typ 1 om 1 jaar vooruit te gaan")
@@ -101,10 +72,58 @@ fun main(args: Array<String>) {
     if(timeskip == 1){
         println("Na 1 jaar ben je eindelijk sterk genoeg en ben je officieel een Demon Slayer.")
         println()
+        println("Typ 1 om doortegaan naar het volgende level...")
     }
-
-
-
-
+    val level2 = readLine()?.toInt()
+    if(level2 == 1){
+        println("Level 2: Lower Demon")
+        println()
+        println("Na een vermoeide dag ga je terug naar huis en vind je een brief op de voordeur geplakt die er niet eerder was met de woorden: Gefeliciteerd met het " +
+                "behalen van je nieuwe rang, ontmoet je teamgenoten aan de top van de oetoeloe berg. ")
+        println()
+        println("Typ 1 om doortegaan...")
+        val verdergaan = readLine()?.toInt()
+        if(verdergaan == 1){
+            println("Je staat er even bij stil of dit een valstrik is of niet maar je kiest ervoor om toch te gaan omdat je even iets anders wilt doen dan trainen.")
+            println()
+            println("Onderweg naar de berg kom je een hindernis tegen, voor je neus zie je een demon die zichzelf de Blacka Dede noemt en jou niet door laat doorgaan.")
+            println("Je bent aan het nadenken over wat zijn zwakste punt is en besluit een gok te wagen:")
+            println()
+            println("1. Buik")
+            println("2. Nek")
+            println("3. Hart")
+            println("4. Rug")
+        }
+    }
+    else {
+        println("Verkeerde invoer, begin opnieuw.")
+    }
+    val gok = readLine()?.toInt()
+    if(gok == 1){
+        println("Je probeert een opening te vinden om voor zijn buik tegaan maar hij is je tijdens het denken voor, met een snelle beweging snijd hij je hoofd eraf.")
+        println()
+        println("Je bent dood, begin opnieuw")
+    }
+    if(gok == 2){
+        println("Door je training weet je meteen dat de nek van een demon het meest effectief is dus ga je zonder te denken met een snelle beweging voor zijn nek.")
+        println()
+        println("Je hebt de demon verslagen, typ 5 om doortegaan naar het volgende level...")
+    }
+    if(gok == 3) {
+        println("Je probeert voor zijn hart te gaan, daarna kom je er snel achter dat hij geen hart heeft... ")
+        println()
+        println("Je bent dood, begin opnieuw")
+    }
+    if(gok == 4){
+        println("Je verstopt je en probeert stiekem van achter te komen, maar helaas heeft hij je al door.")
+        println()
+        println("Je bent dood, begin opnieuw")
+    }
+    val level3 = readLine()?.toInt()
+    if(level3 == 5) {
+        println("Level 3: Berg Oetoeloe")
+        println("")
+        println("Uiteindelijk kom je aan de top van de berg en onmoet je andere demonslayers.")
+    }
 
 }
