@@ -123,7 +123,52 @@ fun main(args: Array<String>) {
     if(level3 == 5) {
         println("Level 3: Berg Oetoeloe")
         println("")
-        println("Uiteindelijk kom je aan de top van de berg en onmoet je andere demonslayers.")
+        println("Uiteindelijk kom je aan de top van de berg en ontmoet je andere demonslayers.")
+        println("")
+        println("Typ 1 om doortegaan...")
+    }
+    val berg = readLine()?.toInt()
+    if(berg == 1) {
+        println("Level 3: Berg Oetoeloe")
+        println("")
+        println("Je ziet een lange jonge met krullen die heel boos kijkt in de verte, je wilt hem aanspreken om te vragen wat er mis is. Opeens schreeuwt hij ''IK BEN JOGGO WATER, WAAR ZIJN MIJN BLACK AIRFORCES?!'' je vraagt aan hem wat er mis is en hij antwoord erop dat die zijn Black Airforces kwijt is... ")
+        println("")
+        println("Help Joggo Water met het zoeken naar zijn Black Airforces!")
+        println("")
+        println("1. Achter de boom")
+        println("2. Achter een rots")
+        println("3. In de struiken")
+        println("4. In de rivier")
+    }
+    val kies = readLine()?.toInt()
+    if(kies == 1){
+        println("Achter de boom zat een beer, hij kleemt je vast en heeft je te pakken... begin opnieuw.")
+        println("")
+    }
+    if(kies == 2){
+        println("Achter de rots zat een grote leeuw, hij heeft je te pakken... begin opnieuw.")
+        println("")
+    }
+    if(kies == 3) {
+        println("Je hebt ze gevonden! Breng ze terug naar Joggo Water door 5 te typen!")
+        println("")
+    }
+    if(kies == 4) {
+        println("Je kan niet zwemmen! Je verdrinkt, begin opnieuw")
+        println("")
+    }
+    val joggo = readLine()?.toInt()
+    if(joggo == 5){
+        println("Joggo Water schreeuwt DANKJEWEL! en hij zegt dat dit eigenlijk een test was, hij zocht een goede vriend die hem zou helpen, als beloning mag je de Black Airforces houden zegt die!")
+        println("")
+        println("Je doet de Black Airforces aan en je voelt je gelijk veel sterker en sneller! Nu kan je de Upper Demon aan!")
+        println("")
+        println("Typ 1 om doortegaan naar de volgende level...")
+    }
+    val zoektocht = readLine()?.toInt()
+    if(zoektocht == 1) {
+        println("Level 4: Zoektocht Upper Demon")
+        println("")
     }
 
 }
