@@ -200,6 +200,55 @@ fun main(args: Array<String>) {
     val level5 = readLine()?.toInt()
     if(level5 == 1) {
         println("Level 5: Upper Demon\n")
+        println("De Upper Moon noemt zichzelf Akaza, hij is een intelligente demon die in de top 5 ranking zit van alle demons. Zijn specialiteit is Martial Arts!")
+        println("Je zoekt naar zijn zwakte maar het is duidelijk dat hij geen zwakte heeft, je ziet een toxic potion wat ervoor zorgt dat iemand verlamd raakt, pak je het op of ga je gelijk voor zijn nek?\n")
+        println("1. Nek")
+        println("2. Toxic Potion")
     }
+    val akaza = readLine()?.toInt()
+    if(akaza == 1) {
+        println("Je gaat voor zijn nek, maar hij is te snel voor je en slaat je kop eraf met zijn vuisten!\n")
+        println("Je bent dood, begin opnieuw!")
+    }
+    if(akaza == 2) {
+        println("Slimme zet! Akaza is nog te snel voor je dus je moet hem wel verlammen!\n")
+        println("Je moet op een van der manier het in zijn mond krijgen... je kunt het in zijn mond proberen te gooien of je kunt de potion in een needle stoppen en het in zijn mond schieten, wat kies je?\n")
+        println("1. Potion gooien in Akaza's mond")
+        println("2. Toxic potion en Needle combineren")
+    }
+    val akazav2 = readLine()?.toInt()
+    if(akazav2 == 1) {
+        println("Je gooit mis! Het vliegt in de lucht en daar ging je kans... Hij valt je aan en je bent dood...\n")
+        println("Je bent dood, begin opnieuw!")
+    }
+    if(akazav2 == 2) {
+        println("Slim van je! Je hebt 2 items gecombineerd namelijk de Toxic Potion en de Needle, nu heb je een Toxic Needle!\n")
+        println("Typ 1 om het af te vuren in Akaza's mond!")
+    }
+    val akazav3 = readLine()?.toInt()
+    if(akazav3 == 1) {
+        println("Bullseye! Je hebt m! Hij is verlamd nu, snel! snel! snel!\n")
+        println("Typ 1 om voor zijn nek te gaan!")
+    }
+    val akazav4 = readLine()?.toInt()
+    if(akazav4 == 1) {
+        println("Je trekt je zwaard en rent zo snel naar hem toe dat de luchtbarriere breekt! Je hebt m! Maar je hoorde iets raars voordat de Upper Demon dood ging, hij fluisterde iets met ''ga terug naar de top van het hotel waarin je begon... Muzan wacht op je daarop...''\n")
+        println("Je dacht in jezelf Muzan? Wie is dat?... i-is hij de gene die mijn famillie had vermoord?! Je bloed begon te koken. Maar als de upper demon al zo sterk was wist je dat Muzan nog veel sterker zou zijn, je moest nog een laatste keer trainen voordat je hem aan kunt...")
+        println("Typ 1 om naar het volgende level te gaan!")
+    }
+    val level6 = readLine()?.toInt()
+    if(level6 == 1) {
+        println("Level 6: Final Training\n")
+        println("Je wist niet hoe je nog sterker moest worden dus ging je als eerst mediteren en dacht je aan je vader voordat hij dood ging aan een ziekte... ''JA DAT IS HET!'' zei je in je hoofd. Je vader had het altijd over een type van adem halen, het heette ''Sun Breathing'' door op deze manier adem te halen zou je lichaam vele malen sterker worden en sneller, je gaat dit leren door elke dag in het bos te mediteren")
+        println("Typ 1 om naar het bos te gaan")
+    }
+    val level6v2 = readLine()?.toInt()
+    if(level6v2 == 1) {
+        println("Je ziet een vogel in de bos, je merkt een verschil in hoe hij ademt, ze ademen anders dan mensen, je probeert dit te imiteren of het enige effect heeft op je lichaam, maar het werkt niet... Je herinnert dat je vader altijd zei dat je natuur moet combineren met de mensheid, bedoeld die hiermee dat ik het moet combineren met mijn adem stijl en die van dieren? Zoals die vogel?\n")
+        println("Je probeert het te combineren en... BINGO! het heeft gewerkt, je lichaam verlangt nu naar het vermoorden van Muzan!\n")
+        println("Typ 1 om naar het laatste level te gaan!")
+    }
+
+
 
 }
