@@ -2,12 +2,6 @@ import kotlin.time.measureTimedValue
 
 fun main(args: Array<String>) {
 
-//    val healthPotion = Loot("Health Potion", LootType.POTION, 7.50)
-//    tim.inventory.add(healthPotion)
-
-//    val toxicPotion = Loot("Toxic Potion", LootType.POTION, 7.50)
-//    tim.inventory.add(toxicPotion)
-
     println("Welkom bij onze Demon Slayer game!")
     println("Typ 1 om te beginnen... \n")
     val start = readLine()?.toInt()
@@ -64,11 +58,14 @@ fun main(args: Array<String>) {
         println("Typ 1 om doortegaan naar het volgende level...")
     }
     val level2 = readLine()?.toInt()
-    if(level2 == 1){
+    if(level2 == 1) {
         println("Level 2: Lower Demon\n")
-        println("Na een vermoeide dag ga je terug naar huis en vind je een brief op de voordeur geplakt die er niet eerder was met de woorden: Gefeliciteerd met het " +
-                "behalen van je nieuwe rang, ontmoet je teamgenoten aan de top van de oetoeloe berg. \n ")
+        println(
+            "Na een vermoeide dag ga je terug naar huis en vind je een brief op de voordeur geplakt die er niet eerder was met de woorden: Gefeliciteerd met het " +
+                    "behalen van je nieuwe rang, ontmoet je teamgenoten aan de top van de oetoeloe berg. \n "
+        )
         println("Typ 1 om doortegaan...")
+
         val verdergaan = readLine()?.toInt()
         if(verdergaan == 1){
             println("Je staat er even bij stil of dit een valstrik is of niet maar je kiest ervoor om toch te gaan omdat je even iets anders wilt doen dan trainen.\n")
@@ -78,10 +75,9 @@ fun main(args: Array<String>) {
             println("2. Nek")
             println("3. Hart")
             println("4. Rug")
+        }  else {
+            println("Verkeerde invoer, begin opnieuw.")
         }
-    }
-    else {
-        println("Verkeerde invoer, begin opnieuw.")
     }
     val gok = readLine()?.toInt()
     if(gok == 1){
@@ -139,8 +135,8 @@ fun main(args: Array<String>) {
     }  else {
         println("Verkeerde invoer, begin opnieuw.")
     }
-    val zoektocht = readLine()?.toInt()
-    if(zoektocht == 1) {
+    val level4 = readLine()?.toInt()
+    if(level4 == 1) {
         println("Level 4: Zoektocht Upper Demon\n")
         println("Met deze nieuwe kracht besluit je op zoek tegaan naar meerdere sterke demons om wraak te nemen op wat ze jou familie hebben aangedaan.")
         println("Je hebt van Joggo Water tehoren gekregen dat er verderop naar het noorden een dorp is waar je meer informatie over de upper demons kan vinden . \n")
@@ -208,7 +204,7 @@ fun main(args: Array<String>) {
     val akaza = readLine()?.toInt()
     if(akaza == 1) {
         println("Je gaat voor zijn nek, maar hij is te snel voor je en slaat je kop eraf met zijn vuisten!\n")
-        println("Je bent dood, begin opnieuw!")
+        println("Je bent dood, begin opnieuw.")
     }
     if(akaza == 2) {
         println("Slimme zet! Akaza is nog te snel voor je dus je moet hem wel verlammen!\n")
@@ -244,11 +240,91 @@ fun main(args: Array<String>) {
     }
     val level6v2 = readLine()?.toInt()
     if(level6v2 == 1) {
-        println("Je ziet een vogel in de bos, je merkt een verschil in hoe hij ademt, ze ademen anders dan mensen, je probeert dit te imiteren of het enige effect heeft op je lichaam, maar het werkt niet... Je herinnert dat je vader altijd zei dat je natuur moet combineren met de mensheid, bedoeld die hiermee dat ik het moet combineren met mijn adem stijl en die van dieren? Zoals die vogel?\n")
-        println("Je probeert het te combineren en... BINGO! het heeft gewerkt, je lichaam verlangt nu naar het vermoorden van Muzan!\n")
+        println("Je ziet een vogel in het bos, je merkt een verschil in hoe hij ademt, ze ademen anders dan mensen, je probeert dit te imiteren of het enige effect heeft op je lichaam, maar het werkt niet... Je herinnert dat je vader altijd zei dat je natuur moet combineren met de mensheid, bedoeld die hiermee dat ik het moet combineren met mijn adem stijl en die van dieren? Zoals die vogel?\n")
+        println("Je probeert het te combineren... na een aantal uur lukt het je om deze nieuwe tactiek volledig te gebruiken. Je bent klaar om je verleden onder ogen te zien.\n")
         println("Typ 1 om naar het laatste level te gaan!")
     }
+    val level7 = readLine()?.toInt()
+    if(level7 == 1) {
+        println("Level 7: Muzan\n")
+        println("Na een lange reis terug naar het hotel zie je een rood soort aura om het hele hotel heen.")
+        println("Je denkt aan de laatste woorden dat de upper demon zei: 'Muzan wacht op je aan de top van het hotel'\n")
+        println("Zonder hier langer bij stil te staan ren je binnen in het hotel en meteen de trap op naar de bovenste verdieping")
+        println("Tijdens het omhoog gaan blijkt er geen spraak van demons te zijn.")
+        println("Uiteindelijk kom je aan bij de laatste trap, je besluit voorzichtig naar boven te gaan en de deur te openen naar het dak.\n")
+        println("Typ 1 om de deur te openen...")
 
+    }
+    val level7v2 = readLine()?.toInt()
+    if (level7v2 == 1) {
+        println("Je doet de deur voorzichtig open en ziet een man met zijn rug omgedraaid staan.")
+        println("Zonder je aantekijken zegt hij: 'Ik heb op je gewacht.'")
+        println("Hij begint te praten over je familie en dat het allemaal zijn plan was.\n")
+        println("Wanneer je dit hoort word je kokend en overweeg je om hem meteen aan te vallen.")
+        println("1. Aanvallen")
+        println("2. Kalmeren")
+
+    }  else {
+        println("Verkeerde invoer, begin opnieuw.")
+    }
+    val aanval = readLine()?.toInt()
+    if(aanval == 1){
+        println("Je besluit Muzan meteen aantevallen zonder na te denken door de woeden in je en vormt hierdoor een zwarte aura om jezelf heen.")
+        println("Muzan ontwijkt al je aanvallen omdat je slaat zonder te denken.")
+        println("Hij zegt hierna: 'We blijken toch het zelfde te zijn en vermoord je met een snelle slag.'\n")
+        println("Je bent dood, begin opnieuw.")
+    }
+    if(aanval == 2){
+        println("Je besluit kalm te blijven en te denken aan je training.")
+        println("Terwijl je begint met je ademhaling te matchen met de natuur merkt Muzan dit en gaat hij gelijk voor de aanval.")
+        println("Met een snelle beweging springt hij naar je toe maar omdat je gefocused bent weet je net een stap opzij te zetten.")
+        println("Je word geraakt door je schouder...\n")
+        println("Je weet dat je moeilijk kan winnen met deze verwonding en denkt aan een paar opties om hier levend uit te komen.")
+        println("1. Health Potion")
+        println("2. Rugtas")
+
+    }
+    val optie = readLine()?.toInt()
+    if(optie == 1){
+        println("Je neemt je Health Potion in en voelt je gelijk beter dan hiervoor.")
+        println("Je blijft kalm en denkt aan je ademhaling tijdens het vechten.\n")
+        println("Typ 5 om door te gaan naar het laatste gevecht.")
+    }
+    if(optie == 2){
+        println("Je besluit een wanhopige aanval te doen, je gooit je rugtas naar muzan toe.\n")
+        println("Je bent dood, begin opnieuw.")
+    }
+    val level7v3 = readLine()?.toInt()
+    if (level7v3 == 5) {
+        println("Tijdens het vechten denk je aan een aantal mogelijkheden die je kunnen laten winnen.")
+        println("1. Nek")
+        println("2. Er over praten")
+        println("3. Vader zijn aanval")
+
+    }
+    val optieV2 = readLine()?.toInt()
+    if(optieV2 == 1){
+        println("Je kiest ervoor om voor zijn nek te gaan omdat dat het meest effectieve plek is van demons.")
+        println("Alleen kom je er snel achter dat muzan geen normale demon is en nadat je zwaard niet door zijn nek kan.\n")
+        println("Je bent dood, begin opnieuw.")
+    }
+    if(optieV2 == 2){
+        println("Je denkt dat alles opgelost kan worden door erover te praten.")
+        println("Dit gaat helaas al snel fout. \n")
+        println("Je bent dood, begin opnieuw.")
+    }
+    if(optieV2 == 3){
+        println("Je herinnerd je een droom die je laatst had, een droom over je vader en zijn aanval.")
+        println("Na het visualiseren van zijn aanval gloeien je ogen rood en komt er vuur over je zwaard heen.")
+        println("Met een snelle mooie slag lukt het je om muzan zijn nek te snijden.\n")
+        println("Je hebt Muzan verslagen en je familie gewroken!")
+        println("Typ 5 voor de end screen...")
+    }
+    val end = readLine()?.toInt()
+    if (end == 5) {
+        println("Gefeliciteerd met het verslaan van Muzan en bedankt voor het spelen van ons spel! \n")
+        println("Einde.")
+    }
 
 
 }
